@@ -1,0 +1,116 @@
+baseurl      = "spaghettidev.tech"
+title        = "spaghettidev 🦀"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[author]
+name = "Alejandro Lopez"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "I'm a Software engineering student and Typescript & Rust developer."
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "homepage"
+  keywords = "homepage, blog"
+  images = [""]
+  
+  # Enable theme toggle
+  enableThemeToggle = true
+  enableGlobalLanguageMenu = true
+
+  [params.footer]
+    trademark = true
+    copyright = true
+    author = true
+
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/RsSpaghetti"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:spaghetticodedev@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/alejandro0619"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://stackoverflow.com/users/14736062/alejandro0619"
+
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = true
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   =  true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[taxonomies]
+    category = "blog"
+    tag      = "blog, rust, javascript, typescript, backend, development, dev"
+    series   = "series"
+
+
+[languages]
+  [languages.en]
+    subtitle  = "I'm a Software engineering student and Typescript & Rust developer."
+    keywords  = "Software, dev"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+    [languages.en.params.logo]
+      logoText = "🦀spaghettidev"
+      logoHomeLink = "/"
+
+  [languages.es]
+    subtitle  = "Estudiante de ingeniería de software, y programador en Typescript y Rust"
+    keywords  = "Software, dev"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    weight    = 2
+    [languages.es.params.logo]
+      logoText = "🦀spaghettidev"
+      logoHomeLink = "/"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "about"
+    name       = "About me"
+    url        = "/about"
