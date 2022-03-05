@@ -1,4 +1,4 @@
-baseurl      = "spaghettidev.tech"
+baseurl      = "/"
 title        = "spaghettidev 🦀"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
