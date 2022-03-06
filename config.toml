@@ -26,7 +26,6 @@ name = "Alejandro Lopez"
   # Metadata mostly used in document's head
   description = "Software Developer ❤"
   keywords = "homepage, blog"
-  images = ["./static/img/spaghetti.png"]
   
   # Enable theme toggle
   enableThemeToggle = true
