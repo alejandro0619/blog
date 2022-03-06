@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2022-03-05T16:15:14-04:00
-draft: true
+draft: false
 toc: true
 description: "Why are you looking at what a spaghetti do?"
 tags:
