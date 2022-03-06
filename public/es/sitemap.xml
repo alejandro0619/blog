@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/es/categories/</loc>
+    <loc>https://spaghettidev.netlify.app/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://spaghettidev.netlify.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/categories/"
+                href="https://spaghettidev.netlify.app/es/categories/"
                 />
   </url><url>
-    <loc>/es/</loc>
+    <loc>https://spaghettidev.netlify.app/es/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://spaghettidev.netlify.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/"
+                href="https://spaghettidev.netlify.app/es/"
                 />
   </url><url>
-    <loc>/es/tags/</loc>
+    <loc>https://spaghettidev.netlify.app/es/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://spaghettidev.netlify.app/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/tags/"
+                href="https://spaghettidev.netlify.app/es/tags/"
                 />
   </url>
 </urlset>

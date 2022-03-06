@@ -4,10 +4,13 @@ languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
 relativeURLs = true
+
 [author]
 name = "Alejandro Lopez"
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
