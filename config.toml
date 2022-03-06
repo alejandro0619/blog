@@ -6,7 +6,8 @@ paginate     = 10
 relativeURLs = true
 [author]
 name = "Alejandro Lopez"
-
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -23,9 +24,9 @@ name = "Alejandro Lopez"
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "homepage"
+  description = "Software Developer ❤"
   keywords = "homepage, blog"
-  images = [""]
+  images = ["./static/img/spaghetti.png"]
   
   # Enable theme toggle
   enableThemeToggle = true
