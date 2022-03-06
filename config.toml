@@ -1,4 +1,4 @@
-baseurl      = "http://localhost:1313/"
+baseurl      = "https://spaghettidev.netlify.app/"
 title        = "spaghettidev 🦀"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
