@@ -1,9 +1,9 @@
-baseurl      = "/"
+baseurl      = "http://localhost:1313/"
 title        = "spaghettidev 🦀"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-
+relativeURLs = true
 [author]
 name = "Alejandro Lopez"
 
@@ -78,11 +78,6 @@ disableRSS     = false
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
-
-[taxonomies]
-    category = "blog"
-    tag      = "blog, rust, javascript, typescript, backend, development, dev"
-    series   = "series"
 
 
 [languages]

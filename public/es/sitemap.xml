@@ -2,52 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>spaghettidev.tech/es/blog/</loc>
+    <loc>http://localhost:1313/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="spaghettidev.tech/blog/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="spaghettidev.tech/es/blog/"
+                href="http://localhost:1313/es/categories/"
                 />
   </url><url>
-    <loc>spaghettidev.tech/es/blog-rust-javascript-typescript-backend-development-dev/</loc>
+    <loc>http://localhost:1313/es/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="spaghettidev.tech/blog-rust-javascript-typescript-backend-development-dev/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="spaghettidev.tech/es/blog-rust-javascript-typescript-backend-development-dev/"
+                href="http://localhost:1313/es/"
                 />
   </url><url>
-    <loc>spaghettidev.tech/es/series/</loc>
+    <loc>http://localhost:1313/es/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="spaghettidev.tech/series/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="spaghettidev.tech/es/series/"
-                />
-  </url><url>
-    <loc>spaghettidev.tech/es/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="spaghettidev.tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="spaghettidev.tech/es/"
+                href="http://localhost:1313/es/tags/"
                 />
   </url>
 </urlset>
