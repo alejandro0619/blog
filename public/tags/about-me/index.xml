@@ -10,13 +10,13 @@
     <lastBuildDate>Sat, 05 Mar 2022 16:15:14 -0400</lastBuildDate><atom:link href="https://spaghettidev.netlify.app/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://spaghettidev.netlify.app/about/about-me/</link>
+      <link>https://spaghettidev.netlify.app/about/</link>
       <pubDate>Sat, 05 Mar 2022 16:15:14 -0400</pubDate>
       
-      <guid>https://spaghettidev.netlify.app/about/about-me/</guid>
+      <guid>https://spaghettidev.netlify.app/about/</guid>
       <description>🐱‍💻 A brief introduction about me. I&amp;rsquo;m a 17 years old software engineering student and math enthusiast from Venezuela. I&amp;rsquo;ve worked with Javascript &amp;amp; Typescript in both Deno and Node.js runtimes and I&amp;rsquo;m currently focused on Rust.
-I just want to prove Javascript is not stuck to the web browser anymore!
-Most of my projects are about creating CLI utilies to ship a brand new way to use a useful apps without taking off your hands from the keyword.</description>
+ I just want to prove Javascript is not stuck to the web browser anymore!
+ Most of my projects are about creating CLI utilies to ship a brand new way to use a useful apps without taking off your hands from the keyword.</description>
     </item>
     
   </channel>

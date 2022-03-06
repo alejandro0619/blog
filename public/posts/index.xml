@@ -1,0 +1,74 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on spaghettidev 🦀</title>
+        <link>https://spaghettidev.netlify.app/posts/</link>
+        <description>Recent content in Posts on spaghettidev 🦀</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sat, 05 Mar 2022 13:43:30 -0400</lastBuildDate>
+        <atom:link href="https://spaghettidev.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>My Journey in Rust Part I</title>
+            <link>https://spaghettidev.netlify.app/posts/2022/03/my-journey-in-rust-part-i/</link>
+            <pubDate>Sat, 05 Mar 2022 13:43:30 -0400</pubDate>
+            
+            <guid>https://spaghettidev.netlify.app/posts/2022/03/my-journey-in-rust-part-i/</guid>
+            <description>Introduction If you have been in a cave for the last year, you might not notice there&amp;rsquo;s a language that&amp;rsquo;s been rising and gathering power, it&amp;rsquo;s name is Rust. If I had to describe it in one phrase, I&amp;rsquo;d totally agree with it&amp;rsquo;s brief but true description shown in the official page:
+ A language empowering everyone to build reliable and efficient software.
+ Why is it so popular lately? Rust was the most loved language for the last six years, by stackoverflow survey, but why ?</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>If you have been in a cave for the last year, you might not notice there&rsquo;s a language that&rsquo;s <strong>been rising</strong> and <strong>gathering power</strong>, it&rsquo;s name is <strong>Rust</strong>.
+If I had to describe it in one phrase, I&rsquo;d  totally agree with it&rsquo;s brief but true description shown in  <a href="https://www.rust-lang.org/">the official page</a>:</p>
+<blockquote>
+<p>A language empowering everyone
+to build reliable and efficient software.</p>
+</blockquote>
+<h2 id="why-is-it-so-popular-lately">Why is it so popular lately?</h2>
+<p>Rust was the most loved language for the last six years, by <a href="https://insights.stackoverflow.com/survey/2021#most-loved-dreaded-and-wanted-language-love-dread">stackoverflow survey</a>, but why ?
+I think it&rsquo;d be easier if I introduce myself, at least a bit.</p>
+<p>I&rsquo;m a Javascript developer, I&rsquo;ve worked with technologies such as Nodejs and Typescript, creating mostly CLIs utilities trying to prove that Javascript is not stuck to a web browser anymore.</p>
+<p>Coming from a interpreted and duck typed language, I really avoided any low-level approach to problems, why? 
+C was, seriously, giving me hard times while I was trying to learn it. Maybe so many new terms, so many things to worry about, a weird syntax even if Javascript is part of the  C-like programming language family.</p>
+<p>C++ was kind of the same, a weird compiler&rsquo;s errors, data types I&rsquo;ve never seen in my life. In short, it was the hell, IMO. (mad respects those who came from any dinamically-typed language and went to any statically one).</p>
+<p>I was the kind of guy that was not interested in a statically-typed language and of course, the low-level was not my field.</p>
+<p>But let&rsquo;s be honest, when you are working on a large codebase, eventually that type hints turns out to be a <strong>need</strong> instead of a boost. And if you just said &ldquo;alejandro just forgot about these useful tools (or languages) such as Typescript that brings you type safety out of the box&rdquo; I did not forgot about it, but afterall your code will be transpiled to Javascript, and all that help that TS brought to you, it&rsquo;s over.</p>
+<p>Don&rsquo;t get me wrong, I&rsquo;m not killing Typescript by saying &ldquo;It&rsquo;s not enough&rdquo; what I mean is that sometimes you need something that will remain until that binary is shipped or the server is up.</p>
+<p>So..The need of a type-safe codebase will push you to choose a statically-language? Yes, eventually it will.</p>
+<p>There&rsquo;s too many languages out there that meets this requirements, why to choose Rust? Let&rsquo;s divide this in 2 sections as follow:</p>
+<ol>
+<li>Rust vs a high-level language.</li>
+<li>Rust vs a low-level language</li>
+</ol>
+<h2 id="rust-vs-a-high-level-language">Rust vs a high-level language</h2>
+<p>What were the super acclaimed benefits Rust brought to made me switch?</p>
+<h3 id="performance">Performance.</h3>
+<p>On many occasions, you don&rsquo;t worry about your performance, because the computer that runs your application is very likely to run it smoothly, but what to do when you want to squeeze the best from it? You should start using a programming language that is closer to the machine, because it means it will be faster.</p>
+<p>Other thing that consumes a lot of resources is the GC (Garbage Collector), in short, is a program that runs when your code runs, and is in charge to check which data is not in use anymore to free its memory space, in order to make it available for other variable to store it&rsquo;s value.</p>
+<h3 id="type-safety">Type Safety</h3>
+<p>If you came from Javascript, you are very used to something like this.</p>
+<p>Javascript simple code snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">numerOne</span>, <span style="color:#a6e22e">numberTwo</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">numberOne</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">numberTwo</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// let&#39;s add two numbers:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>); <span style="color:#75715e">// Expected output: 10;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// what if the user is a QA in their free time and want to generate undefined behavior in our great app?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;abc&#34;</span>); <span style="color:#75715e">// Expected output: Error! you can&#39;t do arithmethic operations with non-numerical parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Real ouput: &#34;6abc&#34;
+</span></span></span></code></pre></div><p>Rust simple code snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">add</span>(number_one: <span style="color:#66d9ef">i32</span>, number_two: <span style="color:#66d9ef">i32</span>) {
+</span></span><span style="display:flex;"><span>  number_one <span style="color:#f92672">+</span> number_two
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>add(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>) <span style="color:#75715e">// Expected output: 10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Not this time QA tester, we have no type coercion here!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>add(<span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;abc&#34;</span>) <span style="color:#75715e">// Expected ouput: Error! because you cannot pass a &amp;str as a parameter if that function signature doesn&#39;t request it!
+</span></span></span></code></pre></div>]]></content>
+        </item>
+        
+    </channel>
+</rss>

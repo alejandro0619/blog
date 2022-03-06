@@ -2,13 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://spaghettidev.netlify.app/about/about-me/</loc>
+    <loc>https://spaghettidev.netlify.app/about/</loc>
     <lastmod>2022-03-05T16:15:14-04:00</lastmod>
   </url><url>
     <loc>https://spaghettidev.netlify.app/tags/about-me/</loc>
-    <lastmod>2022-03-05T16:15:14-04:00</lastmod>
-  </url><url>
-    <loc>https://spaghettidev.netlify.app/about/</loc>
     <lastmod>2022-03-05T16:15:14-04:00</lastmod>
   </url><url>
     <loc>https://spaghettidev.netlify.app/</loc>
@@ -36,6 +33,15 @@
                 hreflang="en"
                 href="https://spaghettidev.netlify.app/tags/"
                 />
+  </url><url>
+    <loc>https://spaghettidev.netlify.app/posts/2022/03/my-journey-in-rust-part-i/</loc>
+    <lastmod>2022-03-05T13:43:30-04:00</lastmod>
+  </url><url>
+    <loc>https://spaghettidev.netlify.app/posts/</loc>
+    <lastmod>2022-03-05T13:43:30-04:00</lastmod>
+  </url><url>
+    <loc>https://spaghettidev.netlify.app/tags/rust/</loc>
+    <lastmod>2022-03-05T13:43:30-04:00</lastmod>
   </url><url>
     <loc>https://spaghettidev.netlify.app/categories/</loc>
     <xhtml:link
