@@ -58,9 +58,14 @@ function add(numerOne, numberTwo){
 // let's add two numbers:
 add(4, 6); // Expected output: 10;
 
-// what if the user is a QA in their free time and want to generate undefined behavior in our great app?
-add(6, "abc"); // Expected output: Error! you can't do arithmethic operations with non-numerical parameters
-// Real ouput: "6abc"
+add(6, "abc"); 
+/* 
+ * Expected output: Error! you can't do arithmethic operations
+ * with non-numerical parameters
+ * what if the user is a QA in their free time and want to generate
+ * undefined behavior in our great app?
+ * Real ouput: "6abc"
+*/ 
 ```
 Rust simple code snippet:
 
@@ -71,8 +76,13 @@ fn add(number_one: i32, number_two: i32) {
 
 add(4, 6) // Expected output: 10
 
-// Not this time QA tester, we have no type coercion here!
-add(6, "abc") // Expected ouput: Error! because you cannot pass a &str as a parameter if that function signature doesn't request it!
+add(6, "abc") 
+/* 
+ * Not this time QA tester, we have no type coercion here!
+ * Expected ouput: Error!
+ * because you cannot pass a &str as a parameter if that function
+ * signature doesn't request it!
+*/
 ```
 
 
