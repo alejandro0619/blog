@@ -1,5 +1,5 @@
 ---
-title: "My Journey in Rust Part I"
+title: "My journey in Rust part I"
 date: 2022-03-05T13:43:30-04:00
 draft: false
 toc: true

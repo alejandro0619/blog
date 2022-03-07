@@ -18,8 +18,8 @@ Most of my projects are about creating CLI utilies to ship a brand new way to us
 
 ## 🐱‍🏍 The projects I've done so far.
 
-- 🌑 [Tsukiapp](https://github.com/orgs/Tsukiapp/): Searching and tracking your favorite animes was never so easy!
-  - 🎇[MAL-Scrapper](https://github.com/orgs/Tsukiapp/MAL-Scrapper): It's [MyAnimeList.net](https://myanimelist.net/) scrapper created for Tsukiapp.
+- 🌑 [Tsukiapp](https://github.com/Tsukiapp/): Searching and tracking your favorite animes was never so easy!
+  - 🎇[MAL-Scrapper](https://github.com/Tsukiapp/MAL-Scrapper): It's [MyAnimeList.net](https://myanimelist.net/) scrapper created for Tsukiapp.
   - 💻[Tsuki-API](https://github.com/Tsukiapp/Tsuki-API): It's an API to retrieve information about anime, mangas and news. 
 
 - 🧨 [Kanzen](https://github.com/alejandro0619/Kanzen-CLI): A minimalist CLI application to download books directly from libgen.
