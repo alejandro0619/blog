@@ -1,9 +1,14 @@
 ---
+author:
+  name: "Alejandro López"
 title: "Creating a CLI with Rust"
 date: 2022-03-07T15:35:15-04:00
+linktitle: Creating a New Theme
+type:
+- post
+- posts
 draft: true
-toc: true
-images:
+toc: true"
 description: "Let's get a bit rusty!"
 tags:
   - Rust
@@ -20,9 +25,10 @@ So, open your Cargo.toml, and add this below ``[dependencies]``:
 [dependencies]
 ansi_term = "0.12.1"
 clap = { version = "3.1.6", features = ["derive"] }
-    
 ```
 Or, if you have [cargo edit](https://github.com/killercup/cargo-edit) (personally, I prefer using this), write rigth in your terminal:
+
+
 
 ```Bash
 cargo add ansi_term 

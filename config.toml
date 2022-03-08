@@ -81,8 +81,12 @@ disableRSS     = false
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
+disableKinds = []
 
-
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 [languages]
   [languages.en]
     subtitle  = "I'm a Software engineering student and Typescript & Rust developer."
