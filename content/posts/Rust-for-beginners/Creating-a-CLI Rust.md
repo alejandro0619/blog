@@ -14,27 +14,80 @@ tags:
   - Rust
   - Introduction
   - CLI
+series: 
+  - Rust tutorials
 ---
 
-## Dependency tree
-Before getting right into our **hacker** mood,
-let's install the packages we'll need:
+## Setup
+Before getting  into our **hacker** mood,
+let's create a cargo project and install the packages we'll need:
 
-So, open your Cargo.toml, and add this below ``[dependencies]``:
+```Bash
+cargo new ferris-say
+```
+
+Now, open your Cargo.toml, and add this below ``[dependencies]``:
 ```Toml
 [dependencies]
 ansi_term = "0.12.1"
 clap = { version = "3.1.6", features = ["derive"] }
 ```
-Or, if you have [cargo edit](https://github.com/killercup/cargo-edit) (personally, I prefer using this), write rigth in your terminal:
-
-
+Or, if you have [cargo edit](https://github.com/killercup/cargo-edit) (which I prefer using), write right in your terminal:
 
 ```Bash
 cargo add ansi_term 
 cargo add clap --features derive
 ```
-After it's installed, 
+After it's installed, we're ready to go to the next step.
+
+## Getting input from arguments 
+
+```Rust
+fn main(){
+  #[derive(Parser, Debug)] 
+  #[clap(author, version, about = "cowsay rusty version")]
+    struct Args {
+        /// Quote 
+        #[clap(short, long)]
+        quote: String,
+
+        /// Ferri's color
+        #[clap(short, long, default_value_t = "RED")]
+        color: String,
+    }
+  let args = Args::parse();
+  println!("Quote: {} Color: {}", args.quote, args.color);
+}
+```
+Okay, let's split this down, and see what happens.
+
+The ``Parser`` trait that our ``Args`` struct derives, parses the arguments provided by the user and turns it into our ``Args`` fields. So we can access to them through its instance. It also takes care to ensure the arguments provided are valid fields. Let's test 'em out:
+
+```Bash
+cargo build
+target/debug/ferris-say.exe
+```
+Will result in:
+```bash
+error: The following required arguments were not provided:
+    --quote <QUOTE>
+
+USAGE:
+    ferris_say.exe [OPTIONS] --quote <QUOTE>
+
+For more information try --help
+```
+So yeah! We need to provide a **quote** argument in order to make it work!
+
+```Bash
+cargo build
+target/debug/ferris-say.exe -q "Hello world!"
+```
+Now it works!
+```bash
+PS C:\Users\Aleja\...> target/debug/ferris_say.exe -q "Hello world!"
+Quote: Hello world! Color: RED
+```
 ## Final code
 We'll split it into parts to understand how it works.
 
