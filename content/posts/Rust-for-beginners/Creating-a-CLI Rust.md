@@ -7,7 +7,7 @@ linktitle: Creating a New Theme
 type:
 - post
 - posts
-draft: true
+draft: false
 toc: true"
 description: "Let's get a bit rusty!"
 tags:
