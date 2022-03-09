@@ -43,16 +43,28 @@
     <loc>https://spaghettidev.netlify.app/tags/rust/</loc>
     <lastmod>2022-03-05T13:43:30-04:00</lastmod>
   </url><url>
-    <loc>https://spaghettidev.netlify.app/categories/</loc>
+    <loc>https://spaghettidev.netlify.app/blog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://spaghettidev.netlify.app/es/categories/"
+                href="https://spaghettidev.netlify.app/es/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://spaghettidev.netlify.app/categories/"
+                href="https://spaghettidev.netlify.app/blog/"
+                />
+  </url><url>
+    <loc>https://spaghettidev.netlify.app/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://spaghettidev.netlify.app/es/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://spaghettidev.netlify.app/series/"
                 />
   </url>
 </urlset>

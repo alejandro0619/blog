@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://spaghettidev.netlify.app/es/categories/</loc>
+    <loc>https://spaghettidev.netlify.app/es/blog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://spaghettidev.netlify.app/categories/"
+                href="https://spaghettidev.netlify.app/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://spaghettidev.netlify.app/es/categories/"
+                href="https://spaghettidev.netlify.app/es/blog/"
+                />
+  </url><url>
+    <loc>https://spaghettidev.netlify.app/es/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://spaghettidev.netlify.app/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://spaghettidev.netlify.app/es/series/"
                 />
   </url><url>
     <loc>https://spaghettidev.netlify.app/es/</loc>
