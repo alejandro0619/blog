@@ -8,7 +8,7 @@ type:
 - post
 - posts
 draft: false
-toc: true"
+toc: true
 description: "Let's get a bit rusty!"
 tags:
   - Rust
@@ -48,7 +48,7 @@ After it's installed, we're ready to go to the next step.
 
 The crate [clap](https://github.com/clap-rs/clap) that we just installed and used in the snippet below, helps us not only to parse but to validate the an input given by the user. Let's see how to implement and use it into our application.
 
-First thing is to create a function called ``input`` here we'll handle and parse the arguments provided; Our Cli will request only two arguments to work with: ``quote`` and ``color`` but for ``color`` we need an enum as we'll only allow to use a few types of colors (but a cool ones). Let's stop talking and start coding:
+First thing is to create a function called ``input`` here we'll handle and parse the arguments provided; Our Cli will request only two arguments to work with: ``quote`` and ``color`` but for ``color`` we need an enum as we'll only allow to use a few types of colors (but a cool ones).
 
 ### The function signature
 
