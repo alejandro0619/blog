@@ -89,7 +89,6 @@ disableKinds = []
     series   = "series"
 [languages]
   [languages.en]
-    languageName = "English"
     subtitle  = "I'm a Software engineering student and Typescript & Rust developer."
     keywords  = "Software, dev"
     weight    = 1
@@ -98,14 +97,8 @@ disableKinds = []
     [languages.en.params.logo]
       logoText = "🦀spaghettidev"
       logoHomeLink = "/"
-      
-     [languages.en.menu.main]
-       name = "home"
-       url = "/"
-
 
   [languages.es]
-    languageName = "Spanish"
     subtitle  = "Estudiante de ingeniería de software, y programador en Typescript y Rust"
     keywords  = "Software, dev"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
@@ -114,10 +107,6 @@ disableKinds = []
     [languages.es.params.logo]
       logoText = "🦀spaghettidev"
       logoHomeLink = "/"
-      
-      [languages.es.menu.main]
-       name = "Inicio"
-       url = "/"
       
 
   # And you can even create generic menu
