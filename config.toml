@@ -9,7 +9,7 @@ relativeURLs = true
 name = "Alejandro Lopez"
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:title/"
 
 [params]
   dateform        = "Jan 2, 2006"
