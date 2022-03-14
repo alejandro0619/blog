@@ -28,7 +28,7 @@ name = "Alejandro Lopez"
 
   # Metadata mostly used in document's head
   description = "Software Developer ❤"
-  keywords = "homepage, blog"
+  keywords = "homepage, blog, developer"
   
   # Enable theme toggle
   enableThemeToggle = true
@@ -63,7 +63,6 @@ name = "Alejandro Lopez"
 
 
 archetypeDir = "archetypes"
-contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
 publishDir   = "public"
@@ -87,8 +86,13 @@ disableKinds = []
     category = "blog"
     tag      = "tags"
     series   = "series"
+
+# Lang settings:
+defaultContentLanguage = 'en'
 [languages]
   [languages.en]
+    contentDir = 'content/english'
+    languageName = 'English'
     subtitle  = "I'm a Software engineering student and Typescript & Rust developer."
     keywords  = "Software, dev"
     weight    = 1
@@ -116,5 +120,5 @@ disableKinds = []
     url        = "/posts"
   [[menu.main]]
     identifier = "about"
-    name       = "About me"
+    name       = "About"
     url        = "/about"
