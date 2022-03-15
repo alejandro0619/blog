@@ -10,7 +10,7 @@ tags:
 
 ## 🌟 Un poco sobre mi
 
-Soy estudiante de ingeniería en informática de 17 años. He trabajado tanto con [Javascript](https://www.javascript.com/) como con [Typescript](https://www.typescriptlang.org/) en los runtimes de [Deno](https://deno.land/) y [Node.js](https://nodejs.org/en/), sin embargo, actualmente estoy concentrado en [Rust](https://www.rust-lang.org/).
+Soy estudiante de ingeniería en informática, y tengo 17 años. He trabajado tanto con [Javascript](https://www.javascript.com/) como con [Typescript](https://www.typescriptlang.org/) en los runtimes de [Deno](https://deno.land/) y [Node.js](https://nodejs.org/en/), sin embargo, actualmente estoy concentrado en [Rust](https://www.rust-lang.org/).
 
 > ¡Solo quiero demostrar que Javascript ya no es dependiente del navegador!
 
