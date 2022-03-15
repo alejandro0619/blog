@@ -20,6 +20,10 @@ series:
 
 ## Setup
 
+⚠ Warning
+
+This post requires basic understanding  of some programming concepts as structs, functions, modules, and I/O handling. It is also recommended to have Rust knowledge, if you are new to programming I highly recommend you to check out this [video](https://youtu.be/zOjov-2OZ0E) and/or if you are new to Rust, you should read the [official book](https://youtu.be/zOjov-2OZ0E).
+
 Before getting  into our **hacker** mood,
 let's create a cargo project and install the packages we'll need:
 
