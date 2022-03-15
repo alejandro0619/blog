@@ -6,7 +6,7 @@ paginate     = 10
 relativeURLs = true
 
 [author]
-name = "Alejandro Lopez"
+name = "Alejandro López"
 
 [permalinks]
   posts = "/posts/:title/"
@@ -63,6 +63,7 @@ name = "Alejandro Lopez"
 
 
 archetypeDir = "archetypes"
+contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
 publishDir   = "public"
@@ -91,7 +92,6 @@ disableKinds = []
 defaultContentLanguage = 'en'
 [languages]
   [languages.en]
-    contentDir = 'content/english'
     languageName = 'English'
     subtitle  = "I'm a Software engineering student and Typescript & Rust developer."
     keywords  = "Software, dev"
