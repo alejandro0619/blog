@@ -14,7 +14,7 @@ Soy estudiante de ingeniería en informática, y tengo 17 años. He trabajado ta
 
 > ¡Solo quiero demostrar que Javascript ya no es dependiente del navegador!
 
-La mayoría de mis proyectos son acerca de crear herramientas CLI para brindar una nueva de utilizar aplicaciones sin despejar tus manos del teclado. Pues siendo sincero, como desarrolladores, amamos ese ***look n' feel*** que nos brinda la terminal.
+La mayoría de mis proyectos son acerca de crear herramientas CLI para brindar una nueva manera de utilizar aplicaciones sin despejar tus manos del teclado. Pues siendo sincero, como desarrolladores, amamos ese ***look n' feel*** que nos brinda la terminal.
 
 ## 📍 Proyectos realizados
 
