@@ -36,4 +36,26 @@ So now we can divide this in two main sections:
 - Rust vs an interpreted language.
 - Rust vs a compiled language.
 
-(WIP)
+## Rust vs an interpreted language
+
+Don't get me wrong, an interpreted language is a great option, specially if you don't want to spend too much time in the developing stage. You want to release your cool first application without that work that implies coding in a compiled one, such as C, C++, and Rust.
+
+In fact, The only downfall I could point out is that is not too performant when runtime comes, otherwise, it does have other pitfalls such as the lack of type checking while compile time. The implementation of the static type checking help it to cuts open several risks that the developer will be fighting against along the developing if it's otherwise.
+
+When rust gets into the scene, he opens a great section of options to choose from. I mentioned above that Rust highlights when it comes to performance and type checking, this post I won't extend myself too much to talk about performance because of two main reasons: People don't really care about the performance of your application with the exception of the those computer science areas where performance means it all, such as ML and developing apps to embedded devices. And the second reason is that I think you can find a lot of information and comparisions between languages in the web, e.g [this page](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html) and if you want to know the comparission between **Rust**, and **C++** [check this out](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html). So I'll focus on the type checking feature that burst Rust (and essentially every static typed language) over an interpreted (specially those that are duck typed) one.
+
+### When a simple function becomes a hell
+
+For the sake of this post, I will compare Javascript vs Rust, I know there're a bunch of programming languages inside of the **interpreted** group, such as Python, Ruby, PHP and so on. And of course is of my knowledge that you can implement static typing for both Javascript and Python, but it gets out of this post scope.
+
+Let's do a **simple and cliché add function:**
+
+```javascript
+function add(n1, n2){
+    return n1 + n2;
+}
+add(5, 6) // Works, returns: 11
+add(5, '6') // Works, returns '56'
+```
+
+Why is that happening? — you may ask yourself if you are not used to **Javascript's type coertion** let me explain it shortly.
