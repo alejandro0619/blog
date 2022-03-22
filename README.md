@@ -1,1 +1,1 @@
-[Blog and portfolio](https://spaghettidev.tech) using Hugo
+[Blog](https://spaghettidev.tech) using Hugo CMS
