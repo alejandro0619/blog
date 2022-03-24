@@ -44,7 +44,7 @@ In fact, The only downfall I could point out is that is not too performant when 
 
 When rust gets into the scene, he opens a great section of options to choose from. I mentioned above that Rust highlights when it comes to performance and type checking, this post I won't extend myself too much to talk about performance because of two main reasons: People don't really care about the performance of your application with the exception of the those computer science areas where performance means it all, such as ML and developing apps to embedded devices. And the second reason is that I think you can find a lot of information and comparisions between languages in the web, e.g [this page](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html) and if you want to know the comparission between **Rust**, and **C++** [check this out](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html). So I'll focus on the type checking feature that burst Rust (and essentially every static typed language) over an interpreted (specially those that are duck typed) one.
 
-### When a simple function becomes a hell
+### Examples
 
 For the sake of this post, I will compare Javascript vs Rust, I know there're a bunch of programming languages inside of the **interpreted** group, such as Python, Ruby, PHP and so on. And of course is of my knowledge that you can implement static typing for both Javascript and Python, but it gets out of this post scope.
 
@@ -58,4 +58,8 @@ add(5, 6) // Works, returns: 11
 add(5, '6') // Works, returns '56'
 ```
 
-Why is that happening? — you may ask yourself if you are not used to **Javascript's type coertion** let me explain it shortly.
+Why is that happening? — you may ask yourself if you are not used to **Javascript's type coercion** let me explain it shortly.
+
+Because of the nature of Javascript — being duck typed — the interpreter instead of showing up an error when you attempt to do some arithmetic operations between a character (or a group of chained characters: strings), it will try to do a implicit convertion (what we call coercion) on one type to able to do the mentioned operation. In the example above, it converts 5 to '5' in order to concat both strings: ``'5' + '6' = '56'`` which is not the operation we really meant, because we wanted to add two parameters, not to concat them.
+
+So, Javascript has this kind of undefined behavior, however I don't mean that all the languages has this problem, remember this is just a scoped example.
