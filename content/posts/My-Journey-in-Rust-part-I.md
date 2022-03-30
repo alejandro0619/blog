@@ -54,12 +54,22 @@ Let's do a **simple and cliché add function:**
 function add(n1, n2){
     return n1 + n2;
 }
-add(5, 6) // Works, returns: 11
+add(5, 6) // Works, returns: 11.
 add(5, '6') // Works, returns '56'
 ```
 
 Why is that happening? — you may ask yourself if you are not used to **Javascript's type coercion** let me explain it shortly.
 
-Because of the nature of Javascript — being duck typed — the interpreter instead of showing up an error when you attempt to do some arithmetic operations between a character (or a group of chained characters: strings), it will try to do a implicit convertion (what we call coercion) on one type to able to do the mentioned operation. In the example above, it converts 5 to '5' in order to concat both strings: ``'5' + '6' = '56'`` which is not the operation we really meant, because we wanted to add two parameters, not to concat them.
+Because of the nature of Javascript — being duck typed — the interpreter instead of showing up an error when you attempt to do some arithmetic operations between a character (or a group of chained characters: strings), it will try to do a implicit convertion (what we call coercion) on one type to able to do the mentioned operation. In the example above, it converts 5 to '5' in order to concat both strings: ``'5' + '6' = '56'`` which is not the operation we really mean, because we wanted to add two parameters, not to concat them.
 
-So, Javascript has this kind of undefined behavior, however I don't mean that all the languages has this problem, remember this is just a scoped example.
+However, not all the interpreted languages got this flaws, but it's worth to mention that compiled languages prevents you from committing this type of errors that eventually will lead you to encounter bugs that are hard to catch up!
+
+Let's do the same function but in Rust:
+
+```rust
+fn add(n1: i32, n2: i32) -> i32{
+    n1 + n2
+}
+add(5, 6); // Works, returns: 11.
+add(5, '6'); // Err! can't pass char as a integer.
+```
