@@ -55,12 +55,12 @@ function add(n1, n2){
     return n1 + n2;
 }
 add(5, 6) // Works, returns: 11.
-add(5, '6') // Works, returns '56'
+add(5, '6') // Works, but returns '56'
 ```
 
 Why is that happening? — you may ask yourself if you are not used to **Javascript's type coercion** let me explain it shortly.
 
-Because of the nature of Javascript — being duck typed — the interpreter instead of showing up an error when you attempt to do some arithmetic operations between a character (or a group of chained characters: strings), it will try to do a implicit convertion (what we call coercion) on one type to able to do the mentioned operation. In the example above, it converts 5 to '5' in order to concat both strings: ``'5' + '6' = '56'`` which is not the operation we really mean, because we wanted to add two parameters, not to concat them.
+Because of the nature of Javascript — being duck typed — the interpreter instead of showing up an error when you attempt to do some arithmetic operations between a character (or a group of chained characters: strings), it will try to do an implicit convertion (what we call coercion) on one type to able to do the mentioned operation. In the example above, it converts 5 to '5' in order to concat both strings: ``'5' + '6' = '56'`` which is not the operation we really mean, because we wanted to add two parameters, not to concat them.
 
 However, not all the interpreted languages got this flaws, but it's worth to mention that compiled languages prevents you from committing this type of errors that eventually will lead you to encounter bugs that are hard to catch up!
 
@@ -72,4 +72,32 @@ fn add(n1: i32, n2: i32) -> i32{
 }
 add(5, 6); // Works, returns: 11.
 add(5, '6'); // Err! can't pass char as a integer.
+```
+
+Also, it's worth to mention that code in a Rust brings you not only explicity explained warnings and type checking, but let you code being clearer by following it's conventions.
+
+> The compiler will complain if you don't follow its rules.
+
+For example, imagine a scenario where you are meant to satinise a string by removing it's whitespaces and adding each word to an array.
+
+Using **Javascript** you could use the **split** method (Of course you can use any other own-made method to archieve this)
+
+```javascript
+function santiniseStr(str){
+    let array = str.split("");
+     return array;
+}
+
+console.log(sanitiseStr("Hello world!"))
+```
+
+Because doing this is a very usual task, the Rust's standar library (std) have one method to archieve this: ``split_whitespaces()``
+
+```rust
+fn sanitise_str(str: &str) -> Vec<&str>{
+    str.split_whitespace().collect::<Vec<&str>>()
+}
+fn main() {
+    println!("{:?}", sanitise_str("Hello world!"));
+}
 ```
