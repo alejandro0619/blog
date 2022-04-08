@@ -1,7 +1,7 @@
 ---
 title: "My journey in Rust: introduction"
 date: 2022-03-05T13:43:30-04:00
-draft: true
+draft: false
 toc: true
 description: "Is Rust really that worth?"
 images:
@@ -78,9 +78,15 @@ Also, it's worth to mention that code in a Rust brings you not only explicity ex
 
 > The compiler will complain if you don't follow its rules.
 
+### Elaborating further
+
+#### Rust explicity
+
+I know this will almost lies on personal opinions, but IHMO Rust brings you the power of explicity without being extra-verbose because adding features at the cost of complexity is not a great trade-off in long terms of maintainability.
+
 For example, imagine a scenario where you are meant to satinise a string by removing it's whitespaces and adding each word to an array.
 
-Using **Javascript** you could use the **split** method (Of course you can use any other own-made method to archieve this)
+Using **Javascript** you could use the ``split`` method (And of course you can use any other own-made method to archieve this)
 
 ```javascript
 function santiniseStr(str){
@@ -91,13 +97,32 @@ function santiniseStr(str){
 console.log(sanitiseStr("Hello world!"))
 ```
 
-Because doing this is a very usual task, the Rust's standar library (std) have one method to archieve this: ``split_whitespaces()``
+Because doing this is a very usual task, the Rust's standard library (std) have one method to archieve this: ``split_whitespaces()``
 
 ```rust
 fn sanitise_str(str: &str) -> Vec<&str>{
-    str.split_whitespace().collect::<Vec<&str>>()
+    str
+    .split_whitespace()
+    .collect::<Vec<&str>>()
 }
 fn main() {
     println!("{:?}", sanitise_str("Hello world!"));
 }
 ```
+
+And at first glance you will say "wtf is all that code", don't wory, I've said that too. The Javascript code will seem like it's clearer, and in fact, it is clearer in terms of fast-reading, but what if you have a (sadly very usual reality) undocumented codebase, and you want to update your ``satiniseStr`` function, **what does it receive as the ``str`` parameter?**, **what is stored in that ``array`` variable?**, maybe **What is the returned value data type?** All these questions could be solved by taking a look at the Javascript documentation, but we all know that we love that try-and-fail method to learn, so what if we avoid reading the doc for a while and see if Rust can solve this for us.
+
+When looking at the ``sanitise_str`` function's signature we can see two important things: The type of the parameter and the type of the returned value.
+
+If you look further you'll find this snippet:
+
+```rust
+    str
+    .split_whitespace()
+    .collect::<Vec<&str>>()
+```
+
+And inmediately you'll notice that the ``split_whitespace`` will split a string by whitespaces and ``collect::<Vec<&str>>()`` can have a very hard to understand looking but in matter it will collect the data returned by the ``split_whitespace``method, inside of a vector of strings (String slices to be specific).
+
+This Rust code is way too self-explain than that Javascript code.
+
