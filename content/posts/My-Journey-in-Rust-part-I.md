@@ -46,7 +46,7 @@ When rust gets into the scene, he opens a great section of options to choose fro
 
 ### Examples
 
-For the sake of this post, I will compare Javascript vs Rust, I know there're a bunch of programming languages inside of the **interpreted** group, such as Python, Ruby, PHP and so on. And of course is of my knowledge that you can implement static typing for both Javascript and Python, but it gets out of this post scope.
+For the sake of this post, I will compare Javascript vs Rust, I know there're a bunch of programming languages inside of the **interpreted** group, such as Python, Ruby, PHP and so on. And of course is of my knowledge that you can implement statically typing for both Javascript and Python, but it gets out of this post scope.
 
 Let's do a **simple and cliché add function:**
 
@@ -126,3 +126,8 @@ And inmediately you'll notice that the ``split_whitespace`` will split a string 
 
 This Rust code is way too self-explain than that Javascript code.
 
+Now that we finish comparing interpreted vs Rust, taking by example Javascript vs Rust, we can proceed to start talking about compiled languages vs Rust.
+
+## Rust vs a compiled language
+
+At this point you may know that Rust, in fact, is considered a compiled language. This section will be a more likely a face to face comparision between languages that plays the same league. Also is a well-known thing that compiled languages are usually statically typed and are way performant than the interpreted ones, because of that you may come to the conclusion that Rust will not offer much more than what the C/C++ languages do offer. But that's a **mistold myth**
