@@ -131,3 +131,5 @@ Now that we finish comparing interpreted vs Rust, taking by example Javascript v
 ## Rust vs a compiled language
 
 At this point you may know that Rust, in fact, is considered a compiled language. This section will be a more likely a face to face comparision between languages that plays the same league. Also is a well-known thing that compiled languages are usually statically typed and are way performant than the interpreted ones, because of that you may come to the conclusion that Rust will not offer much more than what the C/C++ languages do offer. But that's a **mistold myth**
+
+WIP
