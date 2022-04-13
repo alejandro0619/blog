@@ -134,4 +134,4 @@ At this point you may know that Rust, in fact, is considered a compiled language
 
 The advantage that Rust takes over other compiled languages such as C/C++ is that Rust will bring a closed perfomance but without any potential security breach code, and that's the matter when using another languages, C gives you full control of memory which cool but is also dangerous, because not taking the correct prevention will lead to many bugs and security problems.
 
-When C++ did come into the low-level scenario it brough all the C features and an own set of features, but one to mention is the gabage collector that free the programmer from managing the memory at hand, such thing help the programmer to avoid memory leaks but at a cost: **performance** 
+When C++ did come into the low-level scenario it brough all the C features and an own set of features, but there´s one I'd like to mention is the gabage collector that free the programmer from managing the memory at hand, such thing help us to avoid memory leaks but at a cost: **performance** 
