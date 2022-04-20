@@ -71,3 +71,5 @@
 {{- if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
 {{- end}}
+<!-- LaTeX support -->
+{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
