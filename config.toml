@@ -128,7 +128,6 @@ defaultContentLanguage = 'en'
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
-
   [[menu.main]]
     identifier = "about"
     name       = "About"
