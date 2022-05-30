@@ -22,4 +22,6 @@ Let's start by the very beginning!
 
 First, we have know what is a **set**, so we could define it as a kind of container that - indeed - contains a group of elements, usually, mathematical objects, such as numbers, symbols, points in the space and so on, but for now we'll just store cats... and dogs inside it.
 
-Wait... what?
+Let's define a set called Milo's set for the cats, and a set called Loki's set for the dogs.
+
+![Result photo](/sets.png)
