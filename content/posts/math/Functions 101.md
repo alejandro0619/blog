@@ -3,6 +3,7 @@ title: "Functions 101"
 date: 2022-05-30T16:26:38-04:00
 draft: false
 toc: true
+description: "Have you ever wondered how we can study values that depends on other values? - Welcome"
 ---
 
 ## Overview
@@ -17,6 +18,8 @@ Let's start by the very beginning!
 
 ----
 
-First, we have know what is a **set**, so we could define it as a kind of container that - indeed - contains a group of elements, usually, mathmatical objects, such as numbers, symbols, points in the space and so on, but for now we'll just store cats... and dogs inside it.
+## Functions
+
+First, we have know what is a **set**, so we could define it as a kind of container that - indeed - contains a group of elements, usually, mathematical objects, such as numbers, symbols, points in the space and so on, but for now we'll just store cats... and dogs inside it.
 
 Wait... what?
