@@ -25,3 +25,4 @@ First, we have to know what is a **set**, so we could define it as a kind of con
 Let's define a set called Milo's set for the cats, and a set called Loki's set for the dogs.
 
 ![Result photo](/sets.png)
+ 
