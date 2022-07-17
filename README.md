@@ -1,1 +1,1 @@
- Check my [Blog](https://spaghettidev.tech).
+ Check out my [Blog](https://spaghettidev.tech).
